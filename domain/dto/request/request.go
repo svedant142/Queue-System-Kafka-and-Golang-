@@ -10,8 +10,8 @@ type InsertProduct struct {
 	UserID             int64      `form:"user_id"`
 	ProductName        string   `form:"name"`
 	ProductDescription string   `form:"description"`
-	ProductImages      entity.URLS 		`form:"images"`
-	ProductPrice       float64  `form:"price"`
+	ProductImages      entity.URLS 		`form:"product_images"`
+	ProductPrice       float64  `form:"product_price"`
 }
 
 func (req *InsertProduct) Validate() error {

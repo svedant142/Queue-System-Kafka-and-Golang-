@@ -12,7 +12,7 @@ var productUC usecase.IProductUC
 
 func Init(router *gin.Engine, puc usecase.IProductUC) {
 	productUC = puc
-	router.POST("/user/item",insertProduct)
+	router.POST("/user/product",insertProduct)
 }
 
 
